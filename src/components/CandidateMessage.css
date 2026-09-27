@@ -1,0 +1,154 @@
+/* ================================================================
+   CANDIDATE MESSAGE (Editorial Monologue Card)
+   ================================================================ */
+
+.message-section {
+  position: relative;
+  width: 100%;
+  padding: var(--space-xl) var(--page-padding);
+  z-index: 2;
+}
+
+/* ── Editorial Card ──────────────────────────────── */
+.message-card {
+  position: relative;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2.25rem 1.75rem 2rem;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-card), 0 0 0 1px rgba(255, 255, 255, 0.6) inset;
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.85s var(--ease-out), transform 0.85s var(--ease-out);
+  overflow: hidden;
+}
+
+.message-card--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Oversized Quote Mark ────────────────────────── */
+.message-card__quote-mark {
+  position: absolute;
+  top: -0.75rem;
+  left: 1.25rem;
+  font-family: var(--font-display);
+  font-size: 7.5rem;
+  line-height: 0.8;
+  color: var(--color-saffron);
+  opacity: 0.18;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ── Label ───────────────────────────────────────── */
+.message-card__label {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-saffron);
+  margin-bottom: var(--space-sm);
+}
+
+/* ── Message Paragraphs ──────────────────────────── */
+.message-card__body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: var(--space-lg);
+}
+
+.message-card__paragraph {
+  font-family: var(--font-body);
+  font-size: clamp(0.9375rem, 3.8vw, 1.1rem);
+  line-height: 1.65;
+  color: var(--color-text-secondary);
+}
+
+.message-card__paragraph--lead {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1.15rem, 4.4vw, 1.4rem);
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+.message-card__paragraph--highlight {
+  font-weight: 600;
+  color: var(--color-saffron-dark);
+}
+
+/* ── Footer / Signature ──────────────────────────── */
+.message-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--color-border);
+  gap: 1rem;
+}
+
+.message-card__author {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.message-card__name {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.message-card__role {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--color-saffron-dark);
+  font-weight: 500;
+}
+
+.message-card__seal {
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  padding: 0.3rem 0.65rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+  background: var(--color-bg-warm);
+}
+
+/* ── Desktop scaling ─────────────────────────────── */
+@media (min-width: 768px) {
+  .message-section {
+    padding: var(--space-2xl) var(--page-padding);
+  }
+
+  .message-card {
+    padding: 3rem 2.5rem 2.5rem;
+  }
+
+  .message-card__text {
+    font-size: 1.5rem;
+    line-height: 1.65;
+  }
+
+  .message-card__name {
+    font-size: 0.9375rem;
+  }
+}

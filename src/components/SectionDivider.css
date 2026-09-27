@@ -1,0 +1,33 @@
+/* ================================================================
+   SECTION DIVIDER (Warm Saffron & Ivory)
+   ================================================================ */
+
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md) var(--page-padding);
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.section-divider__line {
+  width: 1px;
+  height: 2.5rem;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--color-border-strong),
+    transparent
+  );
+}
+
+.section-divider--accent .section-divider__line {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(var(--color-saffron-rgb), 0.5),
+    transparent
+  );
+}

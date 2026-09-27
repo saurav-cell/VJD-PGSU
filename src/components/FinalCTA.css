@@ -1,0 +1,201 @@
+/* ================================================================
+   CLOSING SECTION (Warm Saffron & Ivory Editorial CTA)
+   ================================================================ */
+
+.closing-section {
+  position: relative;
+  width: 100%;
+  padding: var(--space-xl) var(--page-padding) var(--space-2xl);
+  z-index: 2;
+}
+
+/* ── Closing Card ────────────────────────────────── */
+.closing-card {
+  position: relative;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 2.25rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-card), 0 0 0 1px rgba(255, 255, 255, 0.7) inset;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.85s var(--ease-out), transform 0.85s var(--ease-out);
+  overflow: hidden;
+}
+
+.closing-card--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Top Badge ───────────────────────────────────── */
+.closing-card__badge {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-saffron-dark);
+  padding: 0.3rem 0.8rem;
+  background: var(--color-bg-warm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-full);
+  margin-bottom: var(--space-sm);
+}
+
+/* ── Title & Name ────────────────────────────────── */
+.closing-card__title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: var(--space-xs);
+}
+
+.closing-card__title-sub {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.closing-card__name {
+  font-family: var(--font-hero-name);
+  font-size: clamp(1.85rem, 8.5vw, 3.25rem);
+  font-weight: 900;
+  color: var(--color-text);
+  letter-spacing: 0.02em;
+  line-height: 1.05;
+  text-transform: uppercase;
+  word-break: break-word;
+}
+
+/* ── Position & Message ──────────────────────────── */
+.closing-card__position {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-saffron);
+  margin-bottom: var(--space-md);
+}
+
+.closing-card__message {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(1rem, 3.8vw, 1.15rem);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+  max-width: 480px;
+  margin: 0 auto var(--space-lg);
+}
+
+/* ── Bottom Social Buttons Grid ──────────────────── */
+.closing-card__socials {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.closing-social-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.25rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  color: var(--color-text);
+  transition:
+    background 0.25s var(--ease-out),
+    border-color 0.25s var(--ease-out),
+    transform 0.25s var(--ease-out),
+    box-shadow 0.25s var(--ease-out);
+  text-align: left;
+}
+
+.closing-social-btn:hover {
+  background: #ffffff;
+  border-color: var(--color-border-strong);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+}
+
+.closing-social-btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.closing-social-btn__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.closing-social-btn__label {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.closing-social-btn__sub {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+/* ── Brand Specific Accents ──────────────────────── */
+.closing-social-btn--whatsapp {
+  border-color: rgba(37, 211, 102, 0.35);
+  background: rgba(37, 211, 102, 0.05);
+  color: #128c7e;
+}
+.closing-social-btn--whatsapp:hover {
+  background: rgba(37, 211, 102, 0.12);
+  border-color: #25d366;
+}
+
+.closing-social-btn--instagram {
+  border-color: rgba(228, 64, 95, 0.25);
+  background: rgba(228, 64, 95, 0.04);
+  color: #e4405f;
+}
+.closing-social-btn--instagram:hover {
+  background: rgba(228, 64, 95, 0.1);
+  border-color: #e4405f;
+}
+
+.closing-social-btn--facebook {
+  border-color: rgba(24, 119, 242, 0.25);
+  background: rgba(24, 119, 242, 0.04);
+  color: #1877f2;
+}
+.closing-social-btn--facebook:hover {
+  background: rgba(24, 119, 242, 0.1);
+  border-color: #1877f2;
+}
+
+/* ── Desktop scaling ─────────────────────────────── */
+@media (min-width: 768px) {
+  .closing-section {
+    padding: var(--space-2xl) var(--page-padding);
+  }
+
+  .closing-card {
+    padding: 3.5rem 3rem 3rem;
+  }
+
+  .closing-card__socials {
+    max-width: 480px;
+  }
+}
