@@ -67,7 +67,7 @@ export default function VisualStory() {
               />
               <div className="story-card__overlay" />
               <span className="story-card__num" aria-hidden="true">
-                0{i + 1}
+                {String(i + 1).padStart(2, '0')}
               </span>
             </div>
 

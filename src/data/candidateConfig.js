@@ -37,7 +37,7 @@ const candidateConfig = {
   /* ── Main Hero / Anchor Photograph ─────────────── */
   heroImage: '/images/vrishank_hero.jpg',
 
-  /* ── Visual Story Intro & Cards (5 Total) ─────── */
+  /* ── Visual Story Intro & Cards (9 Total) ─────── */
   visualStorySubtitle: 'Swipe through moments that reflect the journey, the people, and the values that shape his story.',
   visualStories: [
     {
@@ -69,6 +69,30 @@ const candidateConfig = {
       image: '/images/vrishank_story_05.jpg',
       title: 'Responsibility & Milestones',
       message: 'Every achievement is a reminder of the people, experiences, and responsibilities that shape the journey forward.',
+    },
+    {
+      id: 6,
+      image: '/images/vrishank_story_06.jpg',
+      title: 'Standing With People',
+      message: 'In the middle of the crowd, leadership means being present, listening, and standing with people.',
+    },
+    {
+      id: 7,
+      image: '/images/vrishank_story_07.jpg',
+      title: 'Voice of the Students',
+      message: 'When students speak up, their concerns deserve to be heard and represented.',
+    },
+    {
+      id: 8,
+      image: '/images/vrishank_story_08.jpg',
+      title: 'Action on the Ground',
+      message: 'Real work begins on the ground — showing up, working together, and contributing where it matters.',
+    },
+    {
+      id: 9,
+      image: '/images/vrishank_story_09.jpg',
+      title: 'Purpose & Voice',
+      message: 'Finding the courage to speak, the responsibility to listen, and the purpose to make every voice count.',
     },
   ],
 
