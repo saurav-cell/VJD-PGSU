@@ -11,7 +11,7 @@ const candidateConfig = {
   candidateName: 'Vrishank Jyoti Dutta',
   candidateFirstName: 'Vrishank',
   candidateLastName: 'Jyoti Dutta',
-  candidatePosition: 'AGS (UG)',
+  candidatePosition: 'FOR AGS (UG)',
   university: 'Gauhati University',
   electionYear: '2026–2027',
   electionBadge: 'GUPGSU • ELECTION 2026–2027',
